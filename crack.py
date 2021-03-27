@@ -23,7 +23,7 @@ def generateANumber(digits, repeated=REPEATED_DIGITS):
 
 def getUserGuess(digits, userGuess, repeated=REPEATED_DIGITS):
     if not repeated:
-        for i in range(0, 9):
+        for i in range(0, 10):
             if (userGuess.count(str(i)) > 1):
                 print("DUDE you are cheating.")
                 return -1  # ! repeated digits error
