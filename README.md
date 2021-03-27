@@ -25,3 +25,9 @@ install eel library using `pip install eel` the run the `crack.py` file.
 	>
 </figure>
 </span>
+
+UPDATE:
+
+I've made the none python version that's in `No py` folder.
+
+also, it runs on https://erfanpaslar.ir/crack
