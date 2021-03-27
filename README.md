@@ -31,5 +31,3 @@ UPDATE:
 I've made the none python version that's in `No py` folder.
 
 also, it runs on https://erfanpaslar.ir/crack
-
-😕 It's not looks that good on mobile 😕
