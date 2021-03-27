@@ -241,7 +241,7 @@ body {
 }
 .btnDigits:hover {
   background-color: #0000;
-  transition-duration: 0.5s;
+  /* transition-duration: 0.5s; */
 }
 .inputDigit {
   width: 2rem;

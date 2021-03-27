@@ -116,10 +116,16 @@ function updateGuesses(guesses) {
   }
 }
 
-function disableInputs() {
+function disableInputs(enable = 0) {
   let inputs = document.getElementsByClassName("inputs");
-  for (let i = 0; i < inputs.length; i++) {
-    inputs[i].disabled = true;
+  if (enable) {
+    for (let i = 0; i < inputs.length; i++) {
+      inputs[i].disabled = false;
+    }
+  } else {
+    for (let i = 0; i < inputs.length; i++) {
+      inputs[i].disabled = true;
+    }
   }
 }
 
@@ -138,7 +144,10 @@ function modifyDigits() {
     eel.start(DIGITS)();
     makeSomeExamples(DIGITS, DIGITS);
     closeHelp();
+    disableInputs(1);
+    document.getElementById("entered").innerHTML = "";
   } else {
+    // todo
   }
 }
 
