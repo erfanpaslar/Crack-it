@@ -31,7 +31,9 @@ function clicked(element, clear = 0, key = 0, back = 0) {
         if (textElem.innerHTML.length == DIGITS) {
           // console.log("called a python function");
           GUESSED += 1;
-          LEFT -= 1;
+					LEFT -= 1;
+					FREE_PLAY = false;
+					LEFT = DIGITS * 2;
           updateGuesses(GUESSED);
           eel.game(textElem.innerHTML)(); //python will call another function
         }

@@ -80,6 +80,8 @@ function start(digits = 4) {
   // global WON, THE_NUMBER, DIGITS
   DIGITS = digits;
   WON = false;
+	FREE_PLAY = false;
+	LEFT = DIGITS * 2;
   THE_NUMBER = generateANumber(DIGITS);
 }
 
