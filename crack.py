@@ -49,10 +49,7 @@ def checkTheNumber(theNumber, userGuess):
         if userGuess[i] == theNumber[i]:
             isIt += 1
 
-    if isIn == isIt == 0:
-        return 0, 0, False
-    else:
-        return isIn, isIt, False
+    return isIn, isIt, False
 
 
 eel.init('.//web')
