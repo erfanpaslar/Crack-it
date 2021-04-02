@@ -6,7 +6,6 @@ REPEATED_DIGITS = 0
 
 def generateANumber(digits, repeated=REPEATED_DIGITS):
     if not repeated:
-        # I havent tried that, but it should work
         return ''.join(random.sample("0123456789", digits))
         
     else:

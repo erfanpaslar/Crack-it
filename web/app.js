@@ -142,7 +142,8 @@ function modifyDigits() {
 
   if (0 < dig && dig < 10) {
     DIGITS = dig;
-    document.getElementById("mainContainer").innerHTML = "";
+		document.getElementById("mainContainer").innerHTML = "";
+		LEFT = DIGITS*2;
     eel.start(DIGITS)();
     makeSomeExamples(DIGITS, DIGITS);
     closeHelp();
