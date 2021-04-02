@@ -6,18 +6,11 @@ REPEATED_DIGITS = 0
 
 def generateANumber(digits, repeated=REPEATED_DIGITS):
     if not repeated:
-        # todo
-        i = 0
-        returnNumber = ""
-        while i < digits:
-            num = str(random.randrange(0, 10))
-            if num in returnNumber:
-                i -= 1
-            else:
-                returnNumber += num
-            i += 1
-        return returnNumber
+        # I havent tried that, but it should work
+        return ''.join(random.sample("0123456789", digits))
+        
     else:
+       #todo
         return str(random.randrange(10**(digits-1),  10**digits))
 
 
