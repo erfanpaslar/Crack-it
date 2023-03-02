@@ -335,3 +335,8 @@ function addr(a,b) {
   return a+b
 }
 console.log(addr(2,1))
+
+function subber(a,b) {
+  return a-b
+}
+console.log(subber(2,1))
