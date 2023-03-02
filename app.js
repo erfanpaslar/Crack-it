@@ -329,3 +329,9 @@ document.addEventListener("keydown", function (event) {
       break;
   }
 });
+
+
+function addr(a,b) {
+  return a+b
+}
+console.log(addr(2,1))
