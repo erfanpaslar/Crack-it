@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { CurrentGuess } from './components/current-guess';
+import { Guessed } from './components/guessed';
+import { Selector } from './components/selector';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="relative mx-auto h-[100svh] max-w-[400px] bg-gray-900 font-roboto_mono text-gray-200">
+      <CurrentGuess />
+      <Guessed />
+      <Guessed />
+      <Guessed />
+      <Guessed />
+
+      <Selector />
     </div>
   );
-}
+};
 
 export default App;
